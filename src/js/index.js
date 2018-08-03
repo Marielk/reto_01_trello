@@ -1,5 +1,3 @@
-module.exports = {
-  createList: (listName) => {
-
-  }
-};
+  window.createList = (listName) => {
+    showNewList.innerHTML = `<div>${listName}</div>`;
+  };

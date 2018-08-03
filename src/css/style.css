@@ -1,0 +1,8 @@
+/* Funcionalidad Aparecer y Desaparecer */
+.disappear {
+  display: none;
+}
+
+.show {
+  display: block;
+}
