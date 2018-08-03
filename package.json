@@ -1,0 +1,15 @@
+{
+  "name": "reto_01_trello",
+  "version": "1.0.0",
+  "description": "ejercicio de replicar sistema de trello",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "trello",
+    "javascript"
+  ],
+  "author": "mariel quezada",
+  "license": "ISC"
+}
