@@ -44,7 +44,6 @@ body{
   padding-top: 0.5%;
 }
 #logo{
-  width: 45%;
   height: 47px;
   text-align: center;
   opacity: 0.5;
@@ -75,7 +74,7 @@ body{
   font-size: x-large;
 }
 #textos_left1{
-  margin-left: 45%;
+  margin-left: 35%;
 }
 #textos_left2{
   margin-left: 1%;
@@ -120,7 +119,7 @@ textarea::placeholder {
   color: #C4C4C4;
   padding: 0.5%;
 }
-#closeButton{
+.closeButton{
   color: #9B9B9B;
   border-width: 0px;
   border-style: none;

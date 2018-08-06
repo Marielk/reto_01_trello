@@ -18,8 +18,9 @@ addElement.addEventListener('click', () => {
 
 saveButton.addEventListener('click', () => {
   listName = document.getElementById('newListName').value;
-  addNameInput.classList.add('disappear');
-  addNameInput.classList.remove('show');
+  addNameInput.style.position = "absolute";
+  addNameInput.style.left = "35%";
+  addNameInput.style.top =  "20%";
   showNewList.classList.add('show');
   showNewList.classList.remove('disappear');
   window.createList(listName);
