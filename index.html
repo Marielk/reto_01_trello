@@ -5,17 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ejercicio Trello</title>
+  <!--link a iconos-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   	<!--aca va el link cdn de bootstrap-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 	<link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-  <div id="addList" class="show">Añadir Lista...</div>
-  <div id="addName" class="disappear">
-    <input type="text" id="newListName">
-    <button id="saveButton">Guardar</button>
+  <!--header-->
+  <header class="container-fluid">
+    <div id="topBar" class="row">
+      <button class="iconos_topBar" id="icono_tablero" disabled="disabled"> <i class="fab fa-trello"></i> Tableros</button>
+      <input id="input_buscador" class="iconos_topBar" type="text"><i id="search_icon" class="fas fa-search"></i> <!--buscador-->
+      <div id="logo"><img src="src/css/img/header-logo.png"></div> <!--logo-->
+      <button class="iconos_topBar iconos_rigth" disabled="disabled"><i class="fas fa-plus"></i></button> <!--iconos-->
+      <button class="iconos_topBar iconos_rigth" disabled="disabled"><i class="far fa-clock"></i></button> <!--iconos-->
+      <button class="iconos_topBar iconos_rigth" disabled="disabled"><i class="far fa-bell"></i></button> <!--iconos-->
+      <img id="foto_perfil" src="src/css/img/dog-profile.png" > <!--foto de perfil-->
+    </div>
+  </header>
+  <!--Cuerpo del sitio-->
+  <!--Sub barra-->
+  <div class="row">
+    <div class="iconos_subMenu textos_submenu">Tablero - Reto de Código</div>
+    <button class="iconos_subMenu" disabled="disabled"><i class="far fa-star"></i></button>
+    <button class="iconos_subMenu" disabled="disabled"><i class="fas fa-lock"></i></button>
+    <button class="iconos_subMenu textos_submenu" >Privado</button>
+    <div class="iconos_subMenu textos_submenu" id="textos_left1">...</div>
+    <div class="iconos_subMenu textos_submenu" id="textos_left2">Mostrar menú</div>
   </div>
-  <div id="placeNewList" class="disappear"></div>
+  <!--elemento añadir lista-->
+  <div id="addList" class="show">Añadir Lista...</div>
+  <!--elemento para guardar nombre de nueva lista-->
+  <div id="addName" class="disappear container col-4">
+    <textarea class="txt col-12 input_text_post" id="newListName" placeholder="Introduzca el titulo de la lista..."></textarea>
+    <button id="saveButton" class="btn btn-success">Guardar</button>
+    <button id="closeButton"><i class="fas fa-times"></i></button>
+  </div>
+  <!--elemento donde se imprimira la nueva lista creada-->
+  <div id="placeNewList" class="disappear container col-4"></div>
+
+  <!--scripts-->
   <script src="src/js/dom.js"></script>
   <script src="src/js/index.js"></script>
 </body>

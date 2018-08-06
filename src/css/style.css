@@ -1,3 +1,86 @@
+body{
+  background-color: #1E8EC3;
+}
+#topBar{
+  background-color: #1679A9;
+}
+
+.iconos_topBar{
+  font-size: larger;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  border-radius: 2px;
+  color: #FFFFFF;
+  border-width: 0px;
+  border-style: none;
+  background-color: #67A7C5;
+  height: 40px;
+}
+
+.iconos_rigth{
+  width: 41px;
+  margin-left: 0%;
+  margin-bottom: 1%;
+}
+
+#icono_tablero{
+  width: 133px;
+}
+#input_buscador{
+  margin-right: 0px;
+  border-right: none;
+  border-radius: 0px;
+}
+#search_icon{
+  width: 48px;
+  height: 40px;
+  color: #FFFFFF;
+  background-color: #67A7C5;
+  margin-top: 1%;
+  margin-left: 0px;
+  font-size: x-large;
+  text-align: center;
+  padding-top: 0.5%;
+}
+#logo{
+  width: 45%;
+  height: 47px;
+  text-align: center;
+  opacity: 0.5;
+}
+#foto_perfil{
+  width: 42px;
+  height: 39px;
+  margin-top: 1%;
+}
+
+.iconos_subMenu{
+  font-size: larger;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 2%;
+  margin-right: 0%;
+  border-radius: 2px;
+  color: #FFFFFF;
+  border-width: 0px;
+  border-style: none;
+  background-color: #1E8EC3;
+  height: 40px;
+  display: inline-block;
+}
+.textos_submenu{
+  padding-top: 1%;
+  padding-top: 0.3%;
+  font-size: x-large;
+}
+#textos_left1{
+  margin-left: 45%;
+}
+#textos_left2{
+  margin-left: 1%;
+  text-decoration: underline;
+}
 /* Funcionalidad Aparecer y Desaparecer */
 .disappear {
   display: none;
@@ -5,4 +88,85 @@
 
 .show {
   display: block;
+}
+#addList{
+  background-color: #1679A9;
+  color: #FFFFFF;
+  width: 354px;
+  height: 52px;
+  padding: 1%;
+  margin-left: 1%;
+}
+#addName{
+  background: #E1E3E6;
+  border-radius: 3px;
+  margin: 0px;
+  margin-left: 1%;
+  padding: 1%;
+}
+.input_text_post{
+  box-align: center;
+  margin-top: 2%;
+  text-align: center;
+  background: #FFFFFF;
+  border: 1px solid #568BD4;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(149, 179, 219, 0.26);
+  border-radius: 3px;
+  padding-top: 3%;
+}
+textarea::placeholder {
+  font-size: 18px;
+  color: #C4C4C4;
+  padding: 0.5%;
+}
+#closeButton{
+  color: #9B9B9B;
+  border-width: 0px;
+  border-style: none;
+  background-color: #E1E3E6;
+  height: 40px;
+  font-size: x-large;
+}
+#placeNewList{
+  background: #E1E3E6;
+  border-radius: 3px;
+  margin: 0px;
+  margin-left: 1%;
+  padding: 1%;
+}
+#divListName{
+  display: inline;
+  color: black;
+  padding-left: 5%;
+  font-size: larger;
+  font-weight: bold;
+}
+#masButton{
+  position: relative;
+  color: #9B9B9B;
+  /* font-size: xx-large; */
+  margin-left: 10%;
+  border-width: 0px;
+  border-style: none;
+  background-color: #E1E3E6;
+  float: right;
+}
+#addCardButton{
+  color: #9B9B9B;
+  border-width: 0px;
+  border-style: none;
+  background-color: #E1E3E6;
+  width: 100%;
+  text-align: left;
+}
+
+#masButton:hover{
+  background-color: #9B9B9B; 
+  color: #4D5054; 
+}
+#addCardButton:hover{
+  background-color: #9B9B9B; 
+  color: #4D5054; 
+  text-decoration: underline;
 }
