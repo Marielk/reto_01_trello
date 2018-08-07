@@ -1,7 +1,16 @@
 let newName;  
 window.createList = () => {
-  const newList = document.createElement('div'); //crear elemento div 
-  showNewList.appendChild(newList);
+  document.getElementById('newListName').value = ""; //limpiar el textarea
+  //crear elemento div 
+  const newList = document.createElement('div');
+  newList.classList.add("list");//dar estilo
+  showNewList.appendChild(newList); //parentesco
+  // Obtenemos la referencia al elemento, antes de insertarlo 
+  var sp2 = document.getElementById("addName");
+  // Obten la referencia al elemento padre
+  var parentDiv = sp2.parentNode;
+  // Insertamos el nuevo elemento en el DOM antes de sp2
+  parentDiv.insertBefore(newList, sp2);
   newList.innerHTML = `
   <div id="divListName">${listName}</div>
   <button id="masButton">...</button>

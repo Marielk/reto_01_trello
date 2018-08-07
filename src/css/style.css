@@ -127,11 +127,21 @@ textarea::placeholder {
   height: 40px;
   font-size: x-large;
 }
-#placeNewList{
+/* #placeNewList{
   background: #E1E3E6;
   border-radius: 3px;
   margin: 0px;
   margin-left: 1%;
+  padding: 1%;
+} */
+
+.list{
+  display: inline-block;
+  background: #E1E3E6;
+  border-radius: 3px;
+  margin: 0px;
+  margin-left: 1%;
+  margin-top: 4%;
   padding: 1%;
 }
 #divListName{
