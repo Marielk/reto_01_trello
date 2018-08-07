@@ -6,6 +6,8 @@ const addNameInput = document.getElementById('addName');
 const saveButton = document.getElementById('saveButton');
 //guardar lugar donde se mostrara la nueva lista creada
 const showNewList = document.getElementById('placeNewList');
+//guardando el input 
+const textArea = document.getElementById('newListName');
 //guardando el valor del input 
 let listName; 
 //dandole interaccion, ejecuta la funcion 
@@ -18,10 +20,11 @@ addElement.addEventListener('click', () => {
 
 saveButton.addEventListener('click', () => {
   listName = document.getElementById('newListName').value;
+  textArea.innerHTML = "";
   addNameInput.style.position = "absolute";
   addNameInput.style.left = "35%";
   addNameInput.style.top =  "20%";
   showNewList.classList.add('show');
   showNewList.classList.remove('disappear');
-  window.createList(listName);
+  window.createList();
 });

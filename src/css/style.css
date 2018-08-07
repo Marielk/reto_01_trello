@@ -169,3 +169,19 @@ textarea::placeholder {
   color: #4D5054; 
   text-decoration: underline;
 }
+
+.newCard{
+  box-align: center;
+  margin-top: 2%;
+  margin-left: 1%;
+  text-align: left;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding-top: 3%; 
+  padding-left: 2%;
+}
+
+#newCardDiv{
+  display: none;
+}
