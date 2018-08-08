@@ -1,5 +1,6 @@
 body{
   background-color: #1E8EC3;
+  font-family: Helvetica, sans-serif;
 }
 #topBar{
   background-color: #1679A9;
@@ -86,7 +87,7 @@ body{
 }
 
 .show {
-  display: block;
+  display: inline-block;
 }
 #addList{
   background-color: #1679A9;
@@ -95,6 +96,7 @@ body{
   height: 52px;
   padding: 1%;
   margin-left: 1%;
+  
 }
 #addName{
   background: #E1E3E6;
@@ -102,6 +104,7 @@ body{
   margin: 0px;
   margin-left: 1%;
   padding: 1%;
+  width: 12em;
 }
 .input_text_post{
   box-align: center;
@@ -113,9 +116,10 @@ body{
   box-shadow: 0px 4px 4px rgba(149, 179, 219, 0.26);
   border-radius: 3px;
   padding-top: 3%;
+  display: block;
 }
-textarea::placeholder {
-  font-size: 18px;
+input::placeholder {
+  font-size: 15px;
   color: #C4C4C4;
   padding: 0.5%;
 }
@@ -143,6 +147,7 @@ textarea::placeholder {
   margin-left: 1%;
   margin-top: 4%;
   padding: 1%;
+  width: 13em;
 }
 #divListName{
   display: inline;
@@ -161,7 +166,7 @@ textarea::placeholder {
   background-color: #E1E3E6;
   float: right;
 }
-#addCardButton{
+.addCardButton{
   color: #9B9B9B;
   border-width: 0px;
   border-style: none;
@@ -174,7 +179,7 @@ textarea::placeholder {
   background-color: #9B9B9B; 
   color: #4D5054; 
 }
-#addCardButton:hover{
+.addCardButton:hover{
   background-color: #9B9B9B; 
   color: #4D5054; 
   text-decoration: underline;

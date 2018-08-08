@@ -18,8 +18,11 @@ addElement.addEventListener('click', () => {
 
 saveButton.addEventListener('click', () => {
   listName = document.getElementById('newListName').value;
-  addNameInput.style.display = "inline-block";
   showNewList.classList.add('show');
   showNewList.classList.remove('disappear');
+  addElement.classList.add('show');
+  addElement.classList.remove('disappear');
+  addNameInput.classList.add('disappear');
+  addNameInput.classList.remove('show'); 
   window.createList();
 });

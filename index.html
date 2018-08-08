@@ -29,16 +29,18 @@
   <div class="row">
     <div class="iconos_subMenu textos_submenu">Tablero - Reto de Código</div>
     <button class="iconos_subMenu" disabled="disabled"><i class="far fa-star"></i></button>
+    <span class="navbar-divider"></span>
     <button class="iconos_subMenu" disabled="disabled"><i class="fas fa-lock"></i></button>
     <button class="iconos_subMenu textos_submenu" >Privado</button>
+    <span class="navbar-divider"></span>
     <div class="iconos_subMenu textos_submenu" id="textos_left1">...</div>
     <div class="iconos_subMenu textos_submenu" id="textos_left2">Mostrar menú</div>
   </div>
   <!--elemento añadir lista-->
-  <div id="addList" class="show">Añadir Lista...</div>
+  <div id="addList" class="show"> + Añada otra Lista...</div>
   <!--elemento para guardar nombre de nueva lista-->
-  <div id="addName" class="disappear container col-4">
-    <textarea class="txt col-12 input_text_post" id="newListName" placeholder="Introduzca el titulo de la lista..."></textarea>
+  <div id="addName" class="disappear container">
+    <input class="txt input_text_post" id="newListName" placeholder="Introduzca el titulo de la lista...">
     <button id="saveButton" class="btn btn-success">Guardar</button>
     <button class="closeButton"><i class="fas fa-times"></i></button>
   </div>
