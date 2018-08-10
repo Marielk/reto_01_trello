@@ -15,26 +15,30 @@
   <!--header-->
   <header class="container-fluid">
     <div id="topBar" class="row">
-      <button class="iconos_topBar" id="icono_tablero" disabled="disabled"> <i class="fab fa-trello"></i> Tableros</button>
-      <input id="input_buscador" class="iconos_topBar" type="text"><i id="search_icon" class="fas fa-search"></i> <!--buscador-->
-      <div id="logo" class="col-5"><img src="src/css/img/header-logo.png"></div> <!--logo-->
+      <button class="iconos_topBar" id="icono_tablero" disabled="disabled"> <i class="fab fa-trello"></i><span id="text_tablero">Tableros</span></button>
+      <input id="input_buscador" class="iconos_topBar" type="text"><i id="search_icon" class="fas fa-search iconos_topBar"></i> <!--buscador-->
+      <div id="logo_container"><img id="logo" src="src/css/img/header-logo.png"></div> <!--logo-->
       <button class="iconos_topBar iconos_rigth" disabled="disabled"><i class="fas fa-plus"></i></button> <!--iconos-->
-      <button class="iconos_topBar iconos_rigth" disabled="disabled"><i class="far fa-clock"></i></button> <!--iconos-->
+      <button id="clock"  class="iconos_topBar iconos_rigth" disabled="disabled"><i class="far fa-clock"></i></button> <!--iconos-->
       <button class="iconos_topBar iconos_rigth" disabled="disabled"><i class="far fa-bell"></i></button> <!--iconos-->
       <img id="foto_perfil" src="src/css/img/dog-profile.png" > <!--foto de perfil-->
     </div>
   </header>
   <!--Cuerpo del sitio-->
   <!--Sub barra-->
-  <div class="row">
-    <div class="iconos_subMenu textos_submenu">Tablero - Reto de Código</div>
-    <button class="iconos_subMenu" disabled="disabled"><i class="far fa-star"></i></button>
-    <span class="navbar-divider"></span>
-    <button class="iconos_subMenu" disabled="disabled"><i class="fas fa-lock"></i></button>
+  <div  id="subMenu_row"class="row">
+    <div id="titulo_tablero" class="iconos_subMenu textos_submenu">Tablero - Reto de Código</div>
+    <button id="star" class="iconos_subMenu" disabled="disabled"><i class="far fa-star monitos_subMenu"></i></button>
+    <span class="navbar-divider iconos_subMenu barras">|</span>
+    <button class="iconos_subMenu textos_submenu" >Personal</button>
+    <span class="navbar-divider iconos_subMenu barras">|</span>
+    <button class="iconos_subMenu" disabled="disabled"><i class="fas fa-lock monitos_subMenu"></i></button>
     <button class="iconos_subMenu textos_submenu" >Privado</button>
-    <span class="navbar-divider"></span>
-    <div class="iconos_subMenu textos_submenu" id="textos_left1">...</div>
-    <div class="iconos_subMenu textos_submenu" id="textos_left2">Mostrar menú</div>
+    <span class="navbar-divider iconos_subMenu barras">|</span>
+    <div class="container side_menu">
+      <div class="iconos_subMenu textos_submenu">...</div>
+      <div class="iconos_subMenu textos_submenu" id="textos_left2">Mostrar menú</div>
+    </div>
   </div>
   <!--elemento añadir lista-->
   <div id="addList" class="show"> + Añada otra Lista...</div>
