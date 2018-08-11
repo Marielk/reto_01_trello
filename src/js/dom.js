@@ -10,19 +10,15 @@ const showNewList = document.getElementById('placeNewList');
 let listName; 
 //dandole interaccion, ejecuta la funcion 
 addElement.addEventListener('click', () => {
-  addElement.classList.add('disappear');
-  addElement.classList.remove('show');
-  addNameInput.classList.add('show');
-  addNameInput.classList.remove('disappear');   
+  addElement.style.display = "none"; 
+  addNameInput.style.display = "inline-grid";
 });
 
 saveButton.addEventListener('click', () => {
   listName = document.getElementById('newListName').value;
   showNewList.classList.add('show');
   showNewList.classList.remove('disappear');
-  addElement.classList.add('show');
-  addElement.classList.remove('disappear');
-  addNameInput.classList.add('disappear');
-  addNameInput.classList.remove('show'); 
+  addElement.style.display = "inline-grid";
+  addNameInput.style.display = "none";
   window.createList();
 });

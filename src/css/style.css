@@ -4,6 +4,15 @@ body{
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
+  
+}
+header{
+  width: fit-content;
+}
+div.scrollmenu{
+  overflow: auto;
+  white-space: nowrap;
+  min-height: 600px;
 }
 #topBar{
   background-color: #1679A9;
@@ -127,7 +136,6 @@ body{
   border-radius: 3px;
   margin: 0px;
   margin-left: 1%;
-  padding: 1%;
   width: 20em;
 }
 .input_text_post{
@@ -148,6 +156,13 @@ input::placeholder {
   color: #C4C4C4;
   padding: 0.5%;
 }
+.btn-success {
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
+  max-width: fit-content;
+  margin-top: 2%;
+}
 .closeButton{
   color: #9B9B9B;
   border-width: 0px;
@@ -156,6 +171,7 @@ input::placeholder {
   height: 40px;
   font-size: x-large;
 }
+
 /* #placeNewList{
   background: #E1E3E6;
   border-radius: 3px;
@@ -165,7 +181,7 @@ input::placeholder {
 } */
 
 .list{
-  display: inline-block;
+  display: inline-grid;
   background: #E1E3E6;
   border-radius: 3px;
   margin: 0px;
